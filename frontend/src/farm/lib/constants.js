@@ -69,7 +69,7 @@ export const supportedPools = [
     pool: '100%',
   },
   {
-    id: 'lordz',
+    id: 'lordz2',
     version: 'V1',
     name: '$Lordz Staking',
     pid: 1,
