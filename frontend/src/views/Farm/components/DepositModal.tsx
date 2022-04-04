@@ -44,7 +44,7 @@ const DepositModal: React.FC<DepositModalProps> = ({
     <Modal>
       <ModalTitle text={`Deposit ${tokenName} Tokens`} />
       <TokenInput
-        value={val}
+        value={val/1000000000}
         onSelectMax={handleSelectMax}
         onChange={handleChange}
         max={fullBalance}
