@@ -60,7 +60,7 @@ export const getFarms = (farm) => {
           tokenAddress,
           tokenSymbol,
           tokenContract,
-          earnToken: 'lto',
+          earnToken: 'lordz',
           earnTokenAddress: farm.contracts.erc20.options.address,
           icon,
           pool,
@@ -82,6 +82,8 @@ export const getPoolWeight = async (farmContract, pid) => {
 export const getEarned = async (farmContract, pid, account) => {
   return farmContract.methods.pending(pid, account).call()
 }
+
+
 
 export const getTotalLPWethValue = async (
   farmContract,
@@ -116,11 +118,11 @@ export const getTotalLPWethValue = async (
 
   const wethAmount = new BigNumber(lpContractWeth)
     .times(portionLp)
-    .div(new BigNumber(10).pow(18))
+    .div(new BigNumber(10).pow(9))
   return {
     tokenAmount,
     wethAmount,
-    totalWethValue: totalLpWethValue.div(new BigNumber(10).pow(18)),
+    totalWethValue: totalLpWethValue.div(new BigNumber(10).pow(9)),
     tokenPriceInWeth: wethAmount.div(tokenAmount),
     poolWeight: await getPoolWeight(farmContract, pid),
   }
@@ -146,7 +148,7 @@ export const stake = async (farmContract, pid, amount, account) => {
   return farmContract.methods
     .deposit(
       pid,
-      new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(),
+      new BigNumber(amount).times(new BigNumber(10).pow(9)).toString(),
     )
     .send({ from: account })
     .on('transactionHash', (tx) => {
@@ -159,7 +161,7 @@ export const unstake = async (farmContract, pid, amount, account) => {
   return farmContract.methods
     .withdraw(
       pid,
-      new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(),
+      new BigNumber(amount).times(new BigNumber(10).pow(9)).toString(),
     )
     .send({ from: account })
     .on('transactionHash', (tx) => {
