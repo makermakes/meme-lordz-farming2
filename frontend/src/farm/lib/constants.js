@@ -99,7 +99,7 @@ export const supportedPools = [
       1: '0x9cd7403ac4856071581e1f5a298317d9a72a19cf',
     },
     tokenAddresses: { ...contractAddresses.erc20 },
-    symbol: 'LORDZ-BNB PCSV2 LP',
+    symbol: 'LORDZ',
     tokenSymbol: 'LORDZ',
     icon: '',
     pool: '100%',
