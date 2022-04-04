@@ -26,7 +26,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({
   const [pendingTx, setPendingTx] = useState(false)
 
   const fullBalance = useMemo(() => {
-    return getFullDisplayBalance(max)
+    return getFullDisplayBalance(max, 9)
   }, [max])
 
   const handleChange = useCallback(

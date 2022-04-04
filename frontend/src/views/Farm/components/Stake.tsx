@@ -83,7 +83,7 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
             <CardIcon>
               <img src={imageUniswap} height="50" style={{ marginTop: -4 }} />
             </CardIcon>
-            <Value value={getDisplayBalance(stakedBalance)} />
+            <Value value={getDisplayBalance(stakedBalance, 9)} />
             <Label text={`${tokenName} Tokens Staked`} />
           </StyledCardHeader>
           <StyledCardActions>
