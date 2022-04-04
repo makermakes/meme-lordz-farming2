@@ -27,7 +27,7 @@ const Farms: React.FC = () => {
             <Route exact path={path}>
               <PageHeader
                 title="Earn $Lordz"
-                subtitle="Earn $Lordz with Cake LP Tokens."
+                subtitle="Earn $Lordz by staking tokens."
               />
               <StyledFarms>
                 <StyledCardsWrapper>
