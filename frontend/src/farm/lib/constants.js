@@ -85,7 +85,7 @@ export const supportedPools = [
     tokenSymbol: 'LORDZ',
     icon: '',
     pool: '100%',
-  }
+  },
   {
     id: 'lordz',
     version: 'V1',
