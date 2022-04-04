@@ -26,7 +26,7 @@ import { getDisplayBalance } from '../../../utils/formatBalance'
 import DepositModal from './DepositModal'
 import WithdrawModal from './WithdrawModal'
 
-import imageUniswap from '../../../assets/img/logo-cake.svg'
+import imageUniswap from '../../../assets/img/logo-icon.png'
 
 interface StakeProps {
   lpContract: Contract
