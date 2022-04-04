@@ -7,7 +7,7 @@ import logo from '../../assets/img/logo.png'
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
-      <img src={logo} height="40" style={{ marginTop: -4 }} /> <span>LP Staking Portal</span>
+      <img src={logo} height="40" style={{ marginTop: -4 }} /> <span>LP Staking Portal V2</span>
     </StyledLogo>
   )
 }
