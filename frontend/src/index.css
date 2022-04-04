@@ -10,9 +10,8 @@ body {
 @media screen and (min-width: 768px) {
   body {
     background-image: url('https://memelordz.io/wp-content/uploads/2021/11/masthead2.jpg');
-    background-image: url('https://memelordz.io/wp-content/uploads/2022/04/staking2-masthead.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
   }
 }
 
