@@ -75,14 +75,14 @@ export const supportedPools = [
     pid: 1,
     lpAddresses: {
       97: '0x339D3D0C330A705e70F78c18C64999381Ee1910a',
-      56: '0x339D3D0C330A705e70F78c18C64999381Ee1910a',
+      56: '0x2541be91fe0d220ffcbe65f11d88217a87a43bda',
       42: '0x74414F027FDCda5DaacFa4d35F29C0d6c5020776',
       4: '0x7D721dDB45C1eaCceD8Dc4a3698a21b93eb7f9c3',
       1: '0x9cd7403ac4856071581e1f5a298317d9a72a19cf',
     },
     tokenAddresses: { ...contractAddresses.erc20 },
-    symbol: 'LORDZ',
-    tokenSymbol: 'LORDZ',
+    symbol: '$LORDZ',
+    tokenSymbol: '$LORDZ',
     icon: '',
     pool: '100%',
   }
