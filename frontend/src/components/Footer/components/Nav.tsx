@@ -29,9 +29,10 @@ const Nav: React.FC = () => {
 
       <StyledLink
         target="_blank"
-        href={`https://bscscan.com/address/${contractAddressesTemp.farm[chainId]}#code`}
+        href={`https://bscscan.com/address/0x40d2f46fd08e236fc55ba8cf9260d15c5a68e523`}
+
       >
-        Farm Contract
+        Staking Contract
       </StyledLink>
     </StyledNav>
   )

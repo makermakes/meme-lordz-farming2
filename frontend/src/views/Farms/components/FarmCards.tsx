@@ -181,7 +181,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <StyledVersion> {farm.version}</StyledVersion>
             </StyledTitle>
             <StyledDetails>
-              <StyledDetail><span>75% APY<sup>*</sup></span></StyledDetail>
+              <StyledDetail><span>5% APY<sup>*</sup></span></StyledDetail>
             </StyledDetails>
             <Spacer />
             <Button
