@@ -19,7 +19,7 @@ export const getEthChainInfo = () => {
     let rpcUrl: string = 'https://data-seed-prebsc-1-s1.binance.org:8545/';
     let ethscanType: string = 'testnet.';
     const href = window.location.href;
-    if (/\/\/staking2.memelordz.io/.test(href)) {
+    if (/\/\/staking.memelordz.io/.test(href)) {
          chainId = 56;
          rpcUrl = 'https://bsc-dataseed.binance.org/';
          ethscanType = '';
