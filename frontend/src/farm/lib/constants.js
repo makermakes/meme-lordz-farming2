@@ -52,7 +52,7 @@ export const contractAddresses = {
 export const supportedPools = [
   {
     id: 'lordz2',
-    version: 'V1',
+    version: 'V2',
     name: '$Lordz Staking',
     pid: 1,
     lpAddresses: {
